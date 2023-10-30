@@ -2391,3 +2391,15 @@ blockquote .quote-text {
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.14);
   outline: none;
 }
+
+.main-board .nav-tabs {
+  display: flex;
+}
+
+.main-board .nav-tabs > li {
+  flex: 1;
+}
+
+.main-board .timeline {
+  margin-top: 3rem;
+}
