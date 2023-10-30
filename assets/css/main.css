@@ -1000,12 +1000,14 @@ fieldset[disabled] .btn {
 #sponsors .spnsors-logo-small svg, #sponsors .spnsors-logo-small img {
   max-width: 100%;
   max-height: 152px;
+  object-fit: contain;
 }
 
 /* #sponsors  */
 .spnsors-logo-sameheight img {
   height: 152px;
   display: inline-block;
+  object-fit: contain;
 }
 
 /* #sponsors  */
