@@ -150,7 +150,9 @@ fieldset[disabled] .btn {
   z-index: 99;
 }
 .back-to-top i {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   font-size: 20px;
   height: 40px;
