@@ -8,18 +8,30 @@
   <meta name="description" content="SICEF Hakaton 6 - 24h programersko takmičenje">
   <meta name="author" content="SICEF">
 
-  <!-- Disable cache while developing -->
-  <meta http-equiv="expires" content="0">
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://hakaton.sicef.info">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SICEF Hakaton">
+  <meta property="og:description" content="Hakaton je dvadesetčetvoročasovno ekipno takmičenje u kreiranju aplikacije na zadatu temu koje će se održati na Elektronskom fakultetu i u Naučno tehnološkom parku Niš od 3. do 5. novembra 2023. godine.">
+  <meta property="og:image" content="https://hakaton.sicef.info/assets/img/slider/hack_slide9.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="hakaton.sicef.info">
+  <meta property="twitter:url" content="https://hakaton.sicef.info">
+  <meta name="twitter:title" content="SICEF Hakaton">
+  <meta name="twitter:description" content="Hakaton je dvadesetčetvoročasovno ekipno takmičenje u kreiranju aplikacije na zadatu temu koje će se održati na Elektronskom fakultetu i u Naučno tehnološkom parku Niš od 3. do 5. novembra 2023. godine.">
+  <meta name="twitter:image" content="https://hakaton.sicef.info/assets/img/slider/hack_slide9.png">
 
   <!-- FAV ICON -->
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/manifest.json">
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#9EC333">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#AF5092">
   <link rel="shortcut icon" href="favicon/favicon.ico">
   <meta name="msapplication-config" content="favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#AF5092">
   <!-- //FAV ICON -->
 
   <title>SICEF Hakaton</title>
@@ -49,7 +61,7 @@
 
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/colors/orange.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="assets/css/colors/rose_quartz_pink.css" media="screen" />
   <link
     href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext'
     rel='stylesheet' type='text/css'>
@@ -89,18 +101,18 @@
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i></a></li>
               <!-- <li class="animated bounceIn"><a href="#signup">Početak</a></li> -->
-              <li class="animated bounceIn"><a
+              <!-- <li class="animated bounceIn"><a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSdXVKbgDIMpM3YMtx_aCMD-lBs6MCY1iw87V0YuH6_d_OF5qg/viewform">Prijava</a>
-              </li>
+              </li> -->
               <li class="animated bounceIn"><a href="#event">O Hakatonu</a></li>
-              <li class="animated bounceIn"><a href="http://hakaton.sicef.info/prethodni/">Prethodni Hakatoni</a></li>
-              <!-- <li class="animated bounceIn"><a href="#propositions">Propozicije</a></li> -->
+              <!-- <li class="animated bounceIn"><a href="http://hakaton.sicef.info/prethodni/">Prethodni Hakatoni</a></li> -->
+              <li class="animated bounceIn"><a href="#propositions">Propozicije</a></li>
               <li class="animated bounceIn"><a href="#gallery">Galerija</a></li>
               <li class="animated bounceIn"><a href="termsHakaton.html">Uslovi takmičenja</a></li>
-              <!-- <li class="animated bounceIn"><a href="#agenda">Agenda</a></li>
-              <li class="animated bounceIn"><a href="#judges">Žiri</a></li> -->
+              <li class="animated bounceIn"><a href="#agenda">Agenda</a></li>
+              <li class="animated bounceIn"><a href="#judges">Žiri</a></li>
               <!-- <li class="animated bounceIn"><a href="#awards">Nagrade</a></li> -->
-              <li class="animated bounceIn"><a href="#sponsors">Sponzori</a></li>
+              <li class="animated bounceIn"><a href="#sponsors">Pokrovitelji</a></li>
               <li class="animated bounceIn"><a href="#contact">Kontakt</a></li>
             </ul>
           </div>
@@ -126,10 +138,10 @@
           <li><a href="#propositions">Propozicije</a></li>
           <li><a href="#gallery">Galerija</a></li>
           <li><a href="termsHakaton.html">Uslovi takmičenja</a></li>
-          <!-- <li><a href="#agenda">Agenda</a></li> -->
-          <!-- <li><a href="#judges">Žiri</a></li>-->
+          <li><a href="#agenda">Agenda</a></li>
+          <li><a href="#judges">Žiri</a></li>
           <!-- <li><a href="#awards">Nagrade</a></li> -->
-          <li><a href="#sponsors">Sponzori</a></li>
+          <li><a href="#sponsors">Pokrovitelji</a></li>
           <li><a href="#contact">Kontakt</a></li>
         </ul>
         <!-- Mobile Menu End -->
@@ -148,7 +160,11 @@
       <div class="carousel-inner" role="listbox">
         <!-- Slide 1 -->
         <div class="item active">
-          <img width="1900" height="900" src="assets/img/slider/hack_slide9.png" alt="">
+          <picture>
+            <source srcset="assets/img/slider/hack_slide9.avif" type="image/avif">
+            <source srcset="assets/img/slider/hack_slide9.webp" type="image/webp">
+            <img src="assets/img/slider/hack_slide9.png" width="1900" height="900" style="width: 100%; height: auto;" alt="SICEF Hakaton #9 Baner">
+          </picture>
         </div>
       </div>
     </div>
@@ -168,8 +184,8 @@
               <br> Naučno tehnološki park Niš
               <br> Novembar 3. - 5. 2023. godine
             </h4>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXVKbgDIMpM3YMtx_aCMD-lBs6MCY1iw87V0YuH6_d_OF5qg/viewform"
-              target="_blank" class="btn btn-lg btn-common">PRIJAVI SE</a>
+            <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXVKbgDIMpM3YMtx_aCMD-lBs6MCY1iw87V0YuH6_d_OF5qg/viewform"
+              target="_blank" class="btn btn-lg btn-common">PRIJAVI SE</a> -->
           </div>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-delay="0.2s">
@@ -481,13 +497,8 @@
       <hr>
       <div class="col-md-12">
         <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Galerija</h2>
-        <h4 class="section-subcontent wow fadeInUp" data-wow-delay="0.2s">Galerija fotografija sa prethodnog događaja -
-          Hakaton 7</h4>
+        <h4 class="section-subcontent wow fadeInUp text-center" data-wow-delay="0.2s">Galerija fotografija sa prethodnog događaja - Hakaton 7</h4>
       </div>
-      <h3 style="display: none">
-        <i class="fa fa-picture-o"></i>
-        <span>TnT</span> vol. 2, 3 i 4
-      </h3>
       <div class="img-grid clearfix">
         <ul id="eg-thumbs" class="eg-thumbs clearfix">
           <li>
@@ -660,9 +671,9 @@
             <ul class="nav nav-tabs day" role="tablist">
               <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab"
                   data-toggle="tab">3. NOV <br> <span>Otvaranje<br>Cubic Day
-                    <span style="visibility: hidden;">...</span></span></a></li>
+                    <!-- <span style="visibility: hidden;">...</span> --></span></a></li>
               <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">4. NOV <br>
-                  <span>Početak takmičenja<br><span style="visibility: hidden;">...</span></span>
+                  <span>Početak<br>takmičenja<!-- <span style="visibility: hidden;">...</span> --></span>
                 </a></li>
               <li role="presentation"><a href="#day3" aria-controls="day3" role="tab" data-toggle="tab">5. NOV <br>
                   <span>Zatvaranje<br></span><br></a> </li>
@@ -673,6 +684,13 @@
               <!-- Day 1 Start -->
               <div role="tabpanel" class="tab-pane active" id="day1">
                 <div class="row">
+                  <h3 class="col-md-12 day-title">
+                    3. NOV
+                    <br>
+                    Otvaranje
+                    <br>
+                    Cubic Day
+                  </h3>
                   <div class="col-md-12 board" style="margin-top:40px">
                     <ul class="timeline">
                       <li class="timeline__item">
@@ -832,6 +850,11 @@
               <!-- Day 2 Start -->
               <div role="tabpanel" class="tab-pane" id="day2">
                 <div class="row">
+                  <h3 class="col-md-12 day-title">
+                    4. NOV
+                    <br>
+                    Početak takmičenja
+                  </h3>
                   <div class="col-md-12 board" style="margin-top:40px">
                     <ul class="timeline">
 
@@ -915,6 +938,10 @@
               <!-- Day 3 Start -->
               <div role="tabpanel" class="tab-pane" id="day3">
                 <div class="row">
+                  <h3 class="col-md-12 day-title">
+                    5. NOV<br>
+                    Zatvaranje
+                  </h3>
                   <div class="col-md-12 board" style="margin-top:40px">
                     <ul class="timeline">
 
@@ -968,7 +995,7 @@
                           <div class="timeline__step__marker timeline__step__marker--blue"></div>
                         </div>
                         <div class="timeline__time">
-                          14:00 – 14:15
+                          14:00 - 14:15
                         </div>
                         <div class="timeline__content">
                           <div class="timeline__title">
@@ -982,7 +1009,7 @@
                           <div class="timeline__step__marker timeline__step__marker--yellow"></div>
                         </div>
                         <div class="timeline__time">
-                         14:15 – 15:15
+                         14:15 - 15:15
                         </div>
                         <div class="timeline__content">
                           <div class="timeline__title">
@@ -1013,7 +1040,7 @@
                           <div class="timeline__step__marker timeline__step__marker--purple"></div>
                         </div>
                         <div class="timeline__time">
-                          16:00 – 16:30
+                          16:00 - 16:30
                         </div>
                         <div class="timeline__content">
                           <div class="timeline__title">
@@ -1055,14 +1082,12 @@
   </section>
   <!-- Agenda Section End-->
 
-            <!-- Judges Section Start -->
-            <div style="width:800px; margin:0 auto;">
-              <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Žiri</h2>
+  <!-- Judges Section Start -->
   <section id="judges" class="section">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          
+          <h2 class="section-title wow fadeInUp animated" data-wow-delay="0s" style="visibility: visible;-webkit-animation-delay: 0s; -moz-animation-delay: 0s; animation-delay: 0s;">Žiri</h2>          
           <p class="section-subcontent wow fadeInUp" data-wow-delay="0.2s"></p>
         </div>
 
@@ -1096,7 +1121,7 @@
           </div>
         </div>-->
 
-        <div class="col-md-4 col-md-offset-0 col-sm-6 col-xs-12">
+        <div class="col-md-4 col-md-offset-2 col-sm-6 col-xs-12">
           <div class="judges-member wow fadeIn" data-wow-delay="0.7s">
             <div class="member-img">
               <img src="assets/img/judges/male.png" alt="Darko Sarajkić-Markelić">
@@ -1127,7 +1152,9 @@
           </div>
         </div>
       </div>
-          <div class="col-md-4 col-md-offset-0 col-sm-6 col-xs-12">
+      
+      <div class="row">
+          <div class="col-md-4 col-md-offset-2 col-sm-6 col-xs-12">
             <div class="judges-member wow fadeIn" data-wow-delay="0.7s">
               <div class="member-img">
                 <img src="assets/img/judges/Milos.png" alt="Miloš Grozdanović">
@@ -1142,8 +1169,6 @@
               </div>
             </div>
           </div>
-
-        <div class="row">
           
 
          <!-- <div class="col-md-4 col-md-offset-0 col-sm-6 col-xs-12">
@@ -1170,7 +1195,7 @@
               <div class="member-desc">
                 <h3>Miloš Stojanović</h3>
                 <i></i>
-                <h5>Senior Software Engineer & People Manager</h5>
+                <h5>Senior Software Engineer & People Manager</h5>
                 <p></p>
                 <div class="social-icon">
                 </div>
@@ -1178,14 +1203,7 @@
             </div>
           </div>
         </div>
-
-        <div class="row">
-          
-          </div>
-
-        </div>
   </section>
-  </div>
   <!-- Kraj Row -->
   <!-- Judges Section End -->
 
@@ -1298,7 +1316,7 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h2 class="section-title wow fadeInUp" data-wow-delay="0s"> Pokrovitelji događaja</h2>
+          <h2 class="section-title wow fadeInUp" data-wow-delay="0s">Pokrovitelji događaja</h2>
         </div>
       </div>
 
@@ -1309,7 +1327,7 @@
         <p class="small-title small-title-margin sponsor-category wow fadeInUp" data-wow-delay="0.2s">Godišnji pokrovitelji
         </p>
       </div>
-      <div class="row" style="display: flex;justify-content: center;">
+      <div class="row">
         <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
           <div class="spnsors-logo spnsors-logo-sameheight wow fadeInUp" data-wow-delay="0.3s">
             <a href="https://mvpworkshop.co/" target="_blank">
@@ -1333,7 +1351,7 @@
         <p class="small-title small-title-margin sponsor-category wow fadeInUp" data-wow-delay="0.2s">Platinum</p>
       </div>
 
-      <div class="row" style="display: flex;justify-content: center;">
+      <div class="row">
         <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
           <div class="spnsors-logo spnsors-logo-sameheight wow fadeInUp" data-wow-delay="0.3s">
             <a href="https://www.motiondsp.com/" target="_blank">
@@ -1346,11 +1364,11 @@
 
       <!-- GOLD SPONSORS -->
 
+      
+      <div class="col-md-12">
+        <p class="small-title small-title-margin sponsor-category wow fadeInUp" data-wow-delay="0.2s">Gold</p>
+      </div>
       <div class="row">
-
-        <div class="col-md-12">
-          <p class="small-title small-title-margin sponsor-category wow fadeInUp" data-wow-delay="0.2s">Gold</p>
-        </div>
 <!--
         <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
           <div class="spnsors-logo spnsors-logo-sameheight wow fadeInUp" data-wow-delay="0.3s">
@@ -1361,20 +1379,65 @@
         </div>
       -->
 
-      <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
-        <div class="spnsors-logo spnsors-logo-sameheight wow fadeInUp" data-wow-delay="0.3s">
-          <a href="https://www.motiondsp.com/" target="_blank">
-            <img src="assets/img/sponsors/sicef/cubic_motiondsp.jpeg" alt="CubicMotionDSP">
-          </a>
-        </div>
-      </div>
-
-        <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
+        <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12">
           <div class="spnsors-logo spnsors-logo-sameheight wow fadeInUp" data-wow-delay="0.3s">
-            <a href="https://www.badinsoft.com/" target="_blank">
-              <img src="assets/img/sponsors/sicef/badin-soft.png" alt="BadinSoft">
-            </a>
+            <img src="assets/img/sponsors/sicef/cubic_motiondsp.jpeg" alt="CubicMotionDSP">
           </div>
+          <dialog>
+            <div>
+              <form method="dialog"><button><i class="fa fa-close"></i></button></form>
+              <img src="assets/img/sponsors/sicef/cubic_motiondsp.jpeg" alt="CubicMotionDSP">
+              <h3>Cubic MotionDSP</h3>
+              <p>
+                Working at Cubic MotionDSP means solving defense and law enforcement video problems on a global scale.
+                Our team
+                in Serbia combines software, graphics processing and cutting edge research so our customers always
+                have the best
+                view into their critical missions. We're passionate about video, so come join us if you want to work
+                with GPUs,
+                computer vision, machine learning, cloud orchestration, forensic analysis or any of video technologies
+                we
+                specialize in.
+                Our team culture is why we're successful. We want talented individuals who are hungry to learn and
+                grow, who
+                can move in fast in small teams and strive for continuous improvement. We innovate by exploring
+                what''s possible
+                with new technology, challenging old assumptions and using research to guide us to discover new ideas.
+                This
+                innovative spirit is embedded into our products and our customers agree. Our products are growing and
+                evolving
+                and we're looking to hire great engineers to build the next big innovation in mission-critical video.
+              </p>
+              <a href="https://www.motiondsp.com/" target="_blank" class="btn btn-lg btn-common">
+                Više informacija
+              </a>
+            </div>
+          </dialog>
+        </div>
+
+        <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12">
+          <div class="spnsors-logo spnsors-logo-sameheight wow fadeInUp" data-wow-delay="0.3s">
+            <img src="assets/img/sponsors/sicef/badin-soft.png" alt="BadinSoft">
+          </div>
+          <dialog>
+            <div>
+              <form method="dialog"><button><i class="fa fa-close"></i></button></form>
+              <img src="assets/img/sponsors/sicef/badin-soft.png" alt="BadinSoft">
+              <h3>Badin Soft</h3>
+              <p>
+                Badin Soft is a high-tech company based in Serbia, with
+                roughly 150 employees and rapidly growing! At Badin, we help startups, Fortune 500 companies, and
+                enterprises create disruptive digital solutions and achieve growth through innovation. We support our
+                clients every step of the digital innovation way — from ideation and concept drafting to full-stack
+                development and putting solutions into the hands of end-users. In addition to providing professional
+                IT services and consulting, we are heavily investing our engineering and designing capabilities into
+                making our own products which should solve various problems of our partners and end-users
+              </p>
+              <a href="https://www.badinsoft.com/" target="_blank" class="btn btn-lg btn-common">
+                Više informacija
+              </a>
+            </div>
+          </dialog>
         </div>
       </div>
 
@@ -1382,22 +1445,70 @@
       <div class="col-md-12">
         <p class="small-title small-title-margin sponsor-category wow fadeInUp" data-wow-delay="0.2s">Silver</p>
       </div>
-      <div class="row" style="display: flex;justify-content: center;">
+      <div class="row">
 
-        <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
+        <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12">
           <div class="spnsors-logo spnsors-logo-sameheight wow fadeInUp" data-wow-delay="0.3s">
-            <a href="https://www.ingsoftware.com" target="_blank">
-              <img src="assets/img/sponsors/sicef/Ingsoftware.png" alt="ingSoftware">
-            </a>
+            <img src="assets/img/sponsors/sicef/ingsoftware.png" alt="ingSoftware">
           </div>
+          <dialog>
+            <div>
+              <form method="dialog"><button><i class="fa fa-close"></i></button></form>
+              <img src="assets/img/sponsors/sicef/ingsoftware.png" alt="ingSoftware">
+              <h3>IngSoftware</h3>
+              <p>
+                Ing je kompanija za projektovanje i razvoj digitalnih proizvoda, osnovana 2009. godine u jednoj niškoj
+                garaži (al’ stvarno!), koja danas broji 128 zaposlenih iz cele Srbije. Mi smo remote-first tech kolektiv
+                zaljubljenika u tehnologiju koji vole da uče i napreduju, i da rade u okruženju koje im omogućava da 
+                budu produktivni i ostvare svoje ambicije.
+              </p>
+              <p>
+                Kancelariju koju od milja zovemo „Utočište” imamo samo u Nišu jer se držimo krilatice „radi odakle hoćeš i 
+                kad hoćeš, ali uvek imaš Utočište da popiješ kafu s koleginicama i kolegama ili uživo održiš bitan sastanak” 
+                (kad te ne mrzi da se oblačiš za pos’o).
+              </p>
+              <p>
+                Ono čime se naročito ponosimo je briga o našim zaposlenima, gde bismo naglasili work-life balans i psihološku
+                sigurnost na radnom mestu, a od benefita bismo, osim remote rada i fleksibilnog radnog vremena, još pomenuli
+                Veselu sredu (kada nam pauza traje sat i po), Tech Talk petkom i Game Night utorkom, kao i razne team building
+                i team bonding aktivnosti. Privatno zdravstveno osiguranje i prilike za dodatnu edukaciju se podrazumevaju.
+              </p>
+              <p>
+                Trenutno imamo otvoren konkurs za prakse (Java, .NET, Unity) koje bi trebalo da započnu tokom decembra. Prakse 
+                će trajati dva meseca i neće biti plaćene, više informacija na LINKU
+                <a href="https://careers.ingsoftware.com/p/internships">https://careers.ingsoftware.com/p/internships</a>
+              </p>
+              <a href="https://www.ingsoftware.com" target="_blank" class="btn btn-lg btn-common">
+                Više informacija
+              </a>
+            </div>
+          </dialog>
         </div>
 
-        <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12">
+        <div class="col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12">
           <div class="spnsors-logo spnsors-logo-sameheight wow fadeInUp" data-wow-delay="0.3s">
-            <a href="https://www.accordia-group.com" target="_blank">
-              <img src="assets/img/sponsors/sicef/accordiagroup.png" alt="AccordiaGroup">
-            </a>
+            <img src="assets/img/sponsors/sicef/accordiagroup.png" alt="AccordiaGroup">
           </div>
+          <dialog>
+            <div>
+              <form method="dialog"><button><i class="fa fa-close"></i></button></form>
+              <img src="assets/img/sponsors/sicef/accordiagroup.png" alt="AccordiaGroup">
+              <h3>Accordia Group</h3>
+              <p>
+                We are a trusted technology development and support partner to hedge funds, family offices and institutional asset
+                managers, from small to large and everything in between.
+              </p>
+              <p>
+                Since 2004, our engineers have worked side by side with our clients to develop custom portfolio management systems.
+                Over the years, we built solutions to support all aspects of fund operations across the full spectrum of asset
+                classes and a wide range of investment strategies. Each client brought a fresh challenge and a new style of fund
+                management, calling for a custom portfolio management solution. 
+              </p>
+              <a href="https://www.accordia-group.com" target="_blank" class="btn btn-lg btn-common">
+                Više informacija
+              </a>
+            </div>
+          </dialog>
         </div>
 
         <!--
@@ -1446,23 +1557,77 @@
       <div class="col-md-12">
         <p class="small-title small-title-margin sponsor-category wow fadeInUp" data-wow-delay="0.2s">Bronze</p>
       </div>
-      <div class="row" style="display: flex;justify-content: center;">
-
-        
+      <div class="row">        
         <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="spnsors-logo spnsors-logo-sameheight wow fadeInUp" data-wow-delay="0.3s">
-            <a href="https://www.dualsoft.rs/" target="_blank">
-              <img src="assets/img/sponsors/sicef/dualsoft.png" alt="DualSoft">
-            </a>
+            <img src="assets/img/sponsors/sicef/dualsoft.png" alt="DualSOFT">
           </div>
+          <dialog>
+            <div>
+              <form method="dialog"><button><i class="fa fa-close"></i></button></form>
+              <img src="assets/img/sponsors/sicef/dualsoft.png" alt="DualSOFT">
+              <h3>DualSOFT</h3>
+              <p>
+                Mi smo IT produkt kompanija nastala pre tri decenije
+                u Nišu, sa ciljem kreiranja inovativnih rešenja za naše klijente. Od početka i koda koji se 
+                prenosio na floopy disketama do sada složenog sistema, naš tim je uspeo da razvije savremeno 
+                softversko rešenje za korisnike koji posluju na nekoliko kontinenta u industriji sportskog 
+                kladjenja i igara na sreću. 
+              </p>
+              <p>
+                Najveća vrednost naše kompanije jesu ljudi, počev 
+                od seniora koji su preko 10 godina rasli zajedno sa firmom, pa sve do mladih talentovanih 
+                juniora koji su prepoznali okruženje u kome mogu da napreduju uz posvećene mentore i 
+                kvalitetnu obuku. Pored predanog rada da klijentima obezbedimo kvalitetan proizvod, volimo 
+                da se zabavljamo, učestvujemo u sportskim dešavanjima i uspehe proslavljamo u niškim 
+                kafanama.
+              </p>
+              <p>
+                Grad Niš nam je više od lokacije gde se nalazimo.
+                To je naš dom koji volimo i trudimo se da zajedno rastemo i predvodimo pozitivnu promenu 
+                u okruženju. Zato prepoznajemo i podržavamo lokalne inicijative, zanimljive projekte i 
+                zajedno unapredjujemo zajednicu, sa ciljem da stvaramo lepšu sredinu i prijatno okruženje
+                za sve nas.
+              </p>
+              <a href="https://www.dualsoft.rs/" target="_blank" class="btn btn-lg btn-common">
+                Više informacija
+              </a>
+            </div>
         </div>
 
         <div class="col-md-6 col-sm-6 col-xs-12">
           <div class="spnsors-logo spnsors-logo-sameheight wow fadeInUp" data-wow-delay="0.3s">
-            <a href="http://leaditsoftware.com/" target="_blank">
-              <img src="assets/img/sponsors/sicef/LeadIT-Logo.png" alt="LeadIT">
-            </a>
+            <img src="assets/img/sponsors/sicef/LeadIT-Logo.png" alt="LeadIT">
           </div>
+          <dialog>
+            <div>
+              <form method="dialog"><button><i class="fa fa-close"></i></button></form>
+              <img src="assets/img/sponsors/sicef/LeadIT-Logo.png" alt="LeadIT">
+              <h3>Lead IT</h3>
+              <p>
+                Lead IT Ltd. was established in 2010 by a few experienced developers with an idea to provide
+                high quality outsourcing services to a global market. Since then we worked with a number of
+                companies from all over the world on large projects such as web applications for banks and
+                insurance companies, software systems for medical instruments, POS terminal management systems
+                and other complex software solutions. This diversity in project types enabled us to learn and
+                gather experience in a number of web and desktop technologies as well as project management and
+                quality control.
+              </p>
+              <p>
+                Today we are a growing company with a wide range of products and services. Our teams are made of
+                experienced developers that are ready to take any challenge. We love what we do and we care about
+                our clients and their businesses. This enabled us to have long lasting relationships with clients
+                from all over the world.
+              </p>                
+                We are friendly and like to talk because we believe that excellent results are possible only if we
+                understand each other. We won’t try to confuse our clients with technical details if they don’t
+                require them but we can, if necessary, provide detailed documentation and technical specification
+                for everything we do.
+              </p>
+              <a href="http://leaditsoftware.com/" target="_blank" class="btn btn-lg btn-common">
+                Više informacija
+              </a>
+            </div>
         </div>
 
         
@@ -1534,17 +1699,65 @@
       <div class="row" style="display: flex;justify-content: center;">
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="spnsors-logo spnsors-logo-small spnsors-logo-sameheight wow fadeInUp" data-wow-delay="0.3s">
-            <a href="https://ntp.rs/en/" target="_blank">
-              <img src="assets/img/sponsors/sicef/NTP logo.png" alt="Naučno-tehnološki park Niš">
-            </a>
+            <img src="assets/img/sponsors/sicef/NTP logo.png" alt="Naučno-tehnološki park Niš">
           </div>
+          <dialog>
+            <div>
+              <form method="dialog"><button><i class="fa fa-close"></i></button></form>
+              <img src="assets/img/sponsors/sicef/NTP logo.png" alt="Naučno-tehnološki park Niš">
+              <h3>Naucno-tehnološki park Niš</h3>
+              <p>
+                Naucno-tehnološki park Niš (NTP Niš) je neprofitna organizacija koja u bliskoj saradnji sa
+                Univerzitetom u
+                Nišu i akademskom zajednicom obezbeđuje potrebnu infrastrukturnu i stručnu podršku inovativnim
+                preduzećima
+                u razvoju i ostvarivanju poslovnih uspeha na tržištu, posebno u oblasti visokih tehnologija. Osnovan
+                je
+                2020. godine u partnerstvu Vlade Republike Srbije, Univerziteta u Nišu i Grada Niša. Dinamična
+                zajednica
+                akademskih institucija, visokotehnoloških kompanija i startap kompanija okupljena na jednom ovakvom
+                prostoru
+                od 14000m² predstavlja jedinstveno okruženje idealno za rad, razmenu znanja i iskustava, kao i za
+                poslovnu
+                saradnju i komercijalizaciju naučnih istraživanja. NTP Niš je od oktobra postao dom 18 startap i 13
+                tehnološko-razvojnih kompanija clanova, pa se sada ponosimo cinjenicom da se uz našu podršku
+                intenzivno
+                radi na više od 30 inovativnih projekata. Blizu 500 ljudi iz ovog regionalnog centra razvija
+                jedinstvene
+                proizvode i usluge iz oblasti naprednih tehnologija, ukljucujuci gejming, blokčejn, veštacku
+                inteligenciju,
+                mašinsko ucenje, Internet of Things, cloud tehnologiju, itd.
+              </p>
+              <a href="https://ntp.rs/en/" target="_blank" class="btn btn-lg btn-common">
+                Više informacija
+              </a>
+            </div>
+          </dialog>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="spnsors-logo spnsors-logo-small spnsors-logo-sameheight wow fadeInUp" data-wow-delay="0.3s">
-            <a href="http://www.elfak.ni.ac.rs/rs/" target="_blank">
-              <img src="assets/img/sponsors/sicef/elfak.svg" alt="Elfak">
-            </a>
+            <img src="assets/img/sponsors/sicef/elfak.svg" alt="Elfak">
           </div>
+          <dialog>
+            <div>
+              <form method="dialog"><button><i class="fa fa-close"></i></button></form>
+              <img src="assets/img/sponsors/sicef/elfak.svg" alt="Elfak">
+              <h3>Elektronski fakultetu u Nišu</h3>
+              <p>
+                Na Elektronskom fakultetu danas studira preko 2000 studenata. U skladusa potrebama i kadrovskim i
+                prostornim potencijalima, a po odluci Vlade Republike Srbije o broju studenata, Elektronski fakultet
+                upisuje do 540 studenata na prvi stepen studija (od toga do 190 samofinansirajućih studenata), na
+                drugi stepen 352 studenta, a na treći stepen do 100 studenata.
+              </p>
+              <p>
+                O kompetencijama diplomiranih studenata Elektronskog fakulteta u Nišu, magistrima i doktorima nauka
+                svedoči činjenica da je diploma koju steknu na Fakultetu priznata u svetu. Dostignuti nivo znanja na
+                ovom fakultetu omogućava im nastavak usavršavanja i uspešnu poslovnu karijeru u zemlji i inostranstvu.
+              </p>
+              <a href="https://elfak.ni.ac.rs/"
+              target="_blank" class="btn btn-lg btn-common">Više informacija</a>
+            </div>
+          </dialog>
         </div>
         <!-- <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="spnsors-logo spnsors-logo-small spnsors-logo-sameheight wow fadeInUp" data-wow-delay="0.3s">
@@ -1688,499 +1901,6 @@
     </div>
     </div>
   </section>
-  <section id="aboutSponsors" class="section">
-    <div class="container">
-      <h2 class="section-title wow fadeInUp" data-wow-delay="0s">O pokroviteljima</h2>
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner spnsors-logo spnsors-logo-sameheight wow fadeInUp">
-
-
-          <div class="item active">
-            <div>
-              <img src="assets/img/sponsors/sicef/logo-cubic-mdsp gold.png" width="80%" alt="Cubic">
-              <div style="text-align: -webkit-center;">
-                <p style="text-align: justify; width: 80%;">
-                  Working at Cubic MotionDSP means solving defense and law enforcement video problems on a global scale.
-                  Our team
-                  in Serbia combines software, graphics processing and cutting edge research so our customers always
-                  have the best
-                  view into their critical missions. We're passionate about video, so come join us if you want to work
-                  with GPUs,
-                  computer vision, machine learning, cloud orchestration, forensic analysis or any of video technologies
-                  we
-                  specialize in.
-                  Our team culture is why we're successful. We want talented individuals who are hungry to learn and
-                  grow, who
-                  can move in fast in small teams and strive for continuous improvement. We innovate by exploring
-                  what''s possible
-                  with new technology, challenging old assumptions and using research to guide us to discover new ideas.
-                  This
-                  innovative spirit is embedded into our products and our customers agree. Our products are growing and
-                  evolving
-                  and we're looking to hire great engineers to build the next big innovation in mission-critical video.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/badin-soft.png" width="40%" alt="Badin Soft">
-              <div style="text-align: -webkit-center;">
-                <br>
-                <p style="text-align: justify; width: 80%;">Badin Soft is a high-tech company based in Serbia, with
-                  roughly 150 employees and rapidly growing! At Badin, we help startups, Fortune 500 companies, and
-                  enterprises create disruptive digital solutions and achieve growth through innovation. We support our
-                  clients every step of the digital innovation way — from ideation and concept drafting to full-stack
-                  development and putting solutions into the hands of end-users. In addition to providing professional
-                  IT services and consulting, we are heavily investing our engineering and designing capabilities into
-                  making our own products which should solve various problems of our partners and end-users
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/Ingsoftware Logo_LOGO - COLOR POSITIVE silver.png" width="40%"
-                alt="Ingsoftware">
-              <div style="text-align: -webkit-center;">
-                <p style="text-align: justify; width: 80%;">
-                  Ing je kompanija za projektovanje i razvoj digitalnih proizvoda, osnovana 2009. godine u jednoj niškoj
-                   garaži (al' stvarno!), koja danas broji 128 zaposlenih iz cele Srbije. Mi smo remote-first tech kolektiv
-                    zaljubljenika u tehnologiju koji vole da uče i napreduju, i da rade u okruženju koje im omogućava da 
-                    budu produktivni i ostvare svoje ambicije.
-                </p>
-                <p style="text-align: justify; width: 80%;">
-                  Kancelariju koju od milja zovemo "Utočište" imamo samo u Nišu jer se držimo krilatice "radi odakle hoćeš i 
-                  kad hoćeš, ali uvek imaš Utočište da popiješ kafu s koleginicama i kolegama ili uživo održiš bitan sastanak" 
-                  (kad te ne mrzi da se oblačiš za pos'o).
-              </p>
-              <p style="text-align: justify; width: 80%;">
-                  Ono čime se naročito ponosimo je briga o našim zaposlenima, gde bismo naglasili work-life balans i psihološku
-                   sigurnost na radnom mestu, a od benefita bismo, osim remote rada i fleksibilnog radnog vremena, još pomenuli
-                    Veselu sredu (kada nam pauza traje sat i po), Tech Talk petkom i Game Night utorkom, kao i razne team building
-                     i team bonding aktivnosti. Privatno zdravstveno osiguranje i prilike za dodatnu edukaciju se podrazumevaju.
-                </p>
-                <p style="text-align: justify; width: 80%;">
-                  Trenutno imamo otvoren konkurs za prakse (Java, .NET, Unity) koje bi trebalo da započnu tokom decembra. Prakse 
-                  će trajati dva meseca i neće biti plaćene, više informacija na LINKU
-                  <a href="https://careers.ingsoftware.com/p/internships">https://careers.ingsoftware.com/p/internships</a>
-                </p>
-                
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/dualsoft.png" width="40%" alt="DualSOFT">
-              <div style="text-align: -webkit-center;">
-                <br>
-                <p style="text-align: justify; width: 80%;">Mi smo IT produkt kompanija nastala pre tri decenije
-                   u Nišu, sa ciljem kreiranja inovativnih rešenja za naše klijente. Od početka i koda koji se 
-                   prenosio na floopy disketama do sada složenog sistema, naš tim je uspeo da razvije savremeno 
-                   softversko rešenje za korisnike koji posluju na nekoliko kontinenta u industriji sportskog 
-                   kladjenja i igara na sreću. 
-                </p>
-                <p style="text-align: justify; width: 80%;">Najveća vrednost naše kompanije jesu ljudi, počev 
-                  od seniora koji su preko 10 godina rasli zajedno sa firmom, pa sve do mladih talentovanih 
-                  juniora koji su prepoznali okruženje u kome mogu da napreduju uz posvećene mentore i 
-                  kvalitetnu obuku. Pored predanog rada da klijentima obezbedimo kvalitetan proizvod, volimo 
-                  da se zabavljamo, učestvujemo u sportskim dešavanjima i uspehe proslavljamo u niškim 
-                  kafanama.</p>
-                <p style="text-align: justify; width: 80%;">Grad Niš nam je više od lokacije gde se nalazimo.
-                   To je naš dom koji volimo i trudimo se da zajedno rastemo i predvodimo pozitivnu promenu 
-                   u okruženju. Zato prepoznajemo i podržavamo lokalne inicijative, zanimljive projekte i 
-                   zajedno unapredjujemo zajednicu, sa ciljem da stvaramo lepšu sredinu i prijatno okruženje
-                    za sve nas. </p>
-              </div>
-            </div>
-          </div>
-
-          <!--
-          <div class="item active">
-            <div>
-              <img src="assets/img/sponsors/sicef/MVPW-Logo platinum.png" width="40%" alt="MVP Workshop">
-              <div style="text-align: -webkit-center;">
-                <br>
-                <p style="text-align: justify; width: 80%;">MVP Workshop je Web 3.0 kreator poduhvata vođen
-                  istraživanjem
-                  disruptivnih tehnologija i njihovom primenom u scenarijima iz stvarnog života. Mi smo jedan od pionira
-                  izgradnje blokčejn proizvoda u Evropi fokusirajući se isključivo na izgradnju proizvoda zasnovanih na
-                  inovativnim tehnologijama. Razvoj softverskih proizvoda je naša stvar više od 15 godina, gde smo tokom
-                  poslednjih 5 godina stekli veliko iskustvo i stručnost u Web 3.0 industriji.
-                </p>
-              </div>
-            </div>
-          </div>
-        -->
-
- 
-
-<!--
-          <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/kraftwerk.png" width="40%" alt="Kraftwerk">
-              <div style="text-align: -webkit-center;">
-                <p style="text-align: justify; width: 80%;">
-                  Kraftwerk International - osnovan 2011. godine u Nišu, ogranak je međunarodne digitalne
-                  agencije Kraftwerk sa sedištem u Beču, Austrija. Kraftwerk Agenture fur neue Kommunikation
-                  GmbH osnovana je u Beču pre 32 godine. Danas postoji na ukupno 5 lokacija I trenutno broji
-                  62 zaposlenih I 52 eksternih partnera. Preko 4500 uspešnih projekata čine je Nr.1 agencijom
-                  u Austriji. Kreiramo informacijska, komunikacijska i e-trgovina rešenja i proizvode za srednje
-                  i velike kompanije i pomažemo im da naprave sledeći korak u digitalnom dobu. To radimo kao
-                  tim od više od 60 visoko motivisanih stručnjaka.
-                </p>
-              </div>
-            </div>
-          </div>
-        -->
-<!--
-          <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/bc_gold.png" width="70%" alt="BetterCollective">
-              <div style="text-align: -webkit-center;">
-                <br>
-                <p style="text-align: justify; width: 80%;">
-                  Better Collective d.o.o. Niš je deo danske IT kompanije Better Collective, koja je lider u kreiranju
-                  edukativnih platformi za iGaming industriju. Better Collective je osnovan kao start-up kompanija u
-                  Danskoj 2004. godine i danas ima više od 900 zaposlenih u 18 kancelarija širom sveta. Kancelarija u
-                  Nišu je otvorena 2016. godine i ima oko 290 zaposlenih.
-                </p>
-                <p style="text-align: justify; width: 80%;">
-                  Zahvaljujući svojim platformama i alatima Better Collective povezuje korisnike sa iGaming operaterima
-                  koji odgovaraju njihovim potrebama. Transparentnost je jedna od osnovnih vrednosti Better Collective i
-                  ona je ključna za svaku akciju koja se preduzima.
-                </p>
-                <p style="text-align: justify; width: 80%;">
-                  Stalno smo u potrazi za novim talentima različitih obrazovnih profila koji bi se pridružili našem
-                  internacionalnom timu. Naši zaposleni imaju privatno zdravstveno osiguranje, 100% plaćeno bolovanje,
-                  dodatne dane odmora, mogućnost napredovanja i pohađanja konferencija i edukacija, fleksibilno radno
-                  vreme, ručak u kancelariji, timske aktivnosti i razonodu u kancelariji.
-                </p>
-              </div>
-            </div>
-          </div>
-        -->
-
-        <!--
-          <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/endava.png" width="50%" alt="Endava">
-              <div style="text-align: -webkit-center;">
-                <p style="text-align: justify; width: 80%;">
-                  Inspirisani načinom na koji tehnologija postaje sve važniji činilac u načinu na koji živimo i radimo,
-                  Endava je 2000. godine stvorila tehnološku kompaniju koja počiva na jednostavnoj filozofiji –
-                  pomaganje ljudima
-                  na putu ka uspehu – ljudima sa kojima rade, ljudima sa kojima sarađuju i ljudima koji koriste
-                  aplikacije i
-                  sisteme koje Endava kreira, dizajnira i kojima upravlja.
-                </p>
-                <p style="text-align: justify; width: 80%;">
-                  Nakon više od 20 godina iskustva u radu sa nekim od vodećih svetskih kompanija za finansije,
-                  osiguranje,
-                  telekomunikacije, medije, tehnologiju i maloprodaju, možemo da kažemo da je Endava postigla uspeh
-                  upravo
-                  zahvaljujući njima - sjajnim pojedincima koji rade unutar kompanije. Njih je trenutno više od 11 800 u
-                  kancelarijama
-                  raspoređenim u 55 gradova u 25 država sveta. Koristeći najnovije tehnologije, kontinuirano
-                  osmišljavaju i
-                  isporučuju inovativna rešenja koja pomažu klijentima u procesu stalne digitalne transformacije
-                  poslovnih procesa.
-                </p>
-                <p style="text-align: justify; width: 80%;">
-                  Endava je u Srbiji je prisutna od 2015. godine, kada su priču o uspehu započeli u prestonici. Nekoliko
-                  godina
-                  kasnije, tim postaje značajno veći i decentralizovaniji, pa su Endavini stručnjaci raspoređeni u
-                  kancelarijama
-                  širom zemlje, u Beogradu, Novom Sadu, Kragujevcu, Čačku i Nišu.
-                </p>
-                </p>
-              </div>
-            </div>
-          </div>
--->
-<!--
-          <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/flow-ninja-ispravan.png" width="50%" alt="Flow Ninja">
-              <div style="text-align: -webkit-center;">
-                <p style="text-align: justify; width: 80%;">
-                  Flow Ninja je tim mladih i kreativnih UX/UI dizajnera i
-                  Webflow developera koji se bavi izradom sajtova koristeći Webflow platformu.
-                  Sa prosekom od 24,7 godina, prilično smo sigurni da smo najmlađa IT kompanija
-                  u jugoistočnoj Srbiji, a i šire. A i reklo bi se da volimo sve što vole mladi🍻.
-                </p>
-                <p style="text-align: justify; width: 80%;">
-                  Za 3 godine našeg postojanja, izradili smo preko deset hiljada web stranica i sarađivali sa
-                  preko 100 klijenata iz celog sveta, od startap kompanija do svetski poznatih korporacija.
-                  Sigurni smo da je Webflow the next best thing i naš tim se uveliko širi. Na našem sajtu možete
-                  saznati više o nama i otvorenim pozicijama u našoj agenciji.
-                </p>
-              </div>
-            </div>
-          </div>
--->
-<!--
-          <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/executive-digital.png" width="50%" alt="Executive Digital">
-              <div style="text-align: -webkit-center;">
-                <p style="text-align: justify; width: 80%;">
-                  Executive Digital Srbija, sa sedištem u Novom Sadu, predstavlja vodeću digitalnu marketinšku agenciju
-                  i
-                  istovremeno je deo globalne kompanije sa osam kancelarija širom sveta. Fokusirana je na stvaranje
-                  prave vrednosti
-                  i povrata ulaganja za klijente putem digitalnih strategija u kombinaciji sa poslovnim konceptima u
-                  realnom vremenu.
-                  Čini je tim stručnjaka koji broji 50 kreativaca podeljenih u timove koji rade na sledećim uslugama:
-                  SEO usluge,
-                  WEB Development, Social Media Marketing, PPC Oglašavanje, Grafički dizajn, Content Marketing.
-                </p>
-
-                <p style="text-align: justify; width: 80%;">
-                  Executive Digital pruža usluge koje klijentovo digitalno prisustvo dovodi do maksimuma. Od kreativnog
-                  sadržaja na veb-stranici,
-                  preko video zapisa i plaćenog oglašavanja, naš tim posvećenih stručnjaka u svim oblastima digitalnog
-                  marketinga će obezbediti
-                  da poruke klijenta efikasno stignu do ciljne publike. Pomoću naših veština i napornog rada na
-                  istraživanju tržišta, utvrđujemo
-                  na koji načini i gde klijenti na internetu traže informacije o tome šta njihovi proizvodi i usluge
-                  mogu da pruže.
-                </p>
-
-                <p style="text-align: justify; width: 80%;">
-                  Kao priznati eksperti za digitalni marketing, rešavamo današnje marketinške probleme pomoću
-                  inovativnih digitalnih marketinških
-                  rešenja. Naš cilj je da svojim klijentima pomognemo u razvoju celokupne strategije digitalnog
-                  oglašavanja za višestruko
-                  proširenje njihovog poslovanja. Uvek radimo timski i prilazimo svakom klijentu ponaosob, što za nas
-                  predstavlja veliki izazov i
-                  šansu da zajedno rastemo; izuzetno smo odlučni u nameri da pomognemo kompaniji svakog klijenta da
-                  dostigne neslućene visine
-                  prosperiteta i uspeha.
-                </p>
-
-                <p style="text-align: justify; width: 80%;">
-                  Uspešne strategije zahtevaju besprekorno izvršenje!
-                </p>
-
-                <p style="text-align: justify; width: 80%;">
-                  Mi imamo rešenja za digitalni marketing koja ubrzavaju rast svakog biznisa!
-                </p>
-              </div>
-            </div>
-          </div>
--->
-
-<!--
-          <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/webelinx.svg" width="50%" alt="Webelinx">
-              <div style=" text-align: -webkit-center;">
-                <p style="text-align: justify; width: 80%;">
-                  Od 2011. godine, mobilne aplikacije koje je napravio naš fantastični tim iz Niša su osvojile svet.
-                  Najveći broj ideja za Webelinx projekte potiče upravo od naših sjanih zaposlenih zbog čega su naši
-                  resursi inovacija neiscrpni. Poznati smo kao tim koji otvoreno podržava zajednicu podsticanjem mladih
-                  talenata.
-                  Proverite naše mogućnosti za praksu!
-                </p>
-              </div>
-            </div>
-          </div>
-        -->
-          <!-- <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/quantox.svg" width="80%" alt="Quantox">
-              <div style="text-align: -webkit-center;">
-                <p style="text-align: justify; width: 80%;">
-                  Quantox Technology je internacionalna kompanija sa 15 god iskustva u razvoju mobilnih i web aplikacija. Osnovani
-                  smo 2006. godine i danas naš tim broji preko 350 stručnjaka iz različitih IT oblasti. Uspešno vodimo kompletan
-                  proces izrade digitalnog proizvoda - od ideje, postavljanja strategije do njene realizacije. Pružamo usluge 
-                  izrade  softverskih rešenja modernog dizajna, mobilnih i web aplikacija kao i uredaja za virtuelnu realnost. 
-                  Održavanje servera, virtuelni asistenti, jedinstveni online sadržaji su samo neke od naših dodatnih usluga. 
-                  Nastojimo da budemo dobri poslodavci i podrška svim našim zaposlenima, ali podrška studentima u vidu pažljivo 
-                  osmišljenog programa prakse na kom intenzivno radimo. Trudimo se da vodimo odgovorno poslovanje kako prema 
-                  našem timu tako i prema klijentima širom sveta.
-                </p>
-              </div>
-            </div>
-          </div> -->
-          <!-- 
-          <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/fazi silver.png" width="50%" alt="Fazi">
-              <div style="text-align: -webkit-center;">
-                <p style="text-align: justify; width: 80%;">
-                  Fazi je osnovan 1991. u Nišu i danas je jedna od vodećih kompanija koja se bavi proizvodnjom elektronskih ruleta
-                  i online igara na srecu. Naši timovi rade na razvoju Fazi proizvoda koji predstavljaju jedinstveni spoj hardvera
-                  i softvera, što čini naše projekte izazovnim i zanimljivim. Stalna potreba za sve sofisticiranijim proizvodima
-                  od strane naših klijenata i korisnika, kao i novi trendovi na tržištu su učinili da stalni napredak i razvoj
-                  zaposlenih postanu prioritet naše kompanije.
-                </p>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/Webelinx Games Horizontal Logo Color 1 silver-1.png" width="35%" alt="Webelinx">
-              <div style="text-align: -webkit-center;">
-                <p style="text-align: justify; width: 80%;">
-                  Webelinx Games je studio za razvoj mobilnih igara nastao u Nišu, a čija priča se gradila na temelju strasti,
-                  odlučnosti i dragih prijateljstava. Proteklih 10 godina, kao Webelinx, ovaj tim je radio na interesantnim
-                  projektima mobilnih aplikacija i igara, a stoji iza mnogobrojnih uspešnih naslova. U 2020. godini je zbog uspeha
-                  u industriji mobilnih igara iz kompanije Webelinx izdvojen tim sa fokusom na razvoj igara i osnovan je Webelinx
-                  Games kao posebna kompanija. Danas oko 100 ljudi zove Webelinx Games svojom kompanijom i deli njenu viziju o
-                  razvoju  mobilnih igara vrednih pamćenja. U igrama nastalim u okviru Webelinx Games-a - interaktivnim pricama,
-                  bacanju trojki ili HOPA igrama, danas uživa više desetina miliona ljudi širom sveta. Webelinx Games svojim 
-                  iskustvom i znanjem pokriva različite discipline i obezbeduje raznolike ideje za svoje projekte, ali je pre 
-                  svega JEDAN tim uvek spreman za nove izazove
-                </p>
-              </div>
-            </div>
-          </div> -->
-          <!-- <div class="item">
-              <div>
-                <img src="assets/img/sponsors/sicef/Zuehlke_Logo_rgb_hires bronze.jpg" width="15%" alt="Zuehlke">
-                <div style="text-align: -webkit-center;">
-                  <p style="text-align: justify; width: 80%;">
-                    Verujemo da su inovacije i tehnologija pozitivne snage promena za poslovanje i društvo. Podržavamo naše 
-                    klijente da zamisle i ostvare održivu budućnost. Osnovani smo u Švajcarskoj 1968. i globalna smo softverska
-                    kompanija. Naših 1300 zaposlenih nalazi se u Austriji, Bugarskoj, Nemackoj, Hong Kongu, Portugalu, Srbiji, 
-                    Singapuru, Švajcarskoj, Velikoj Britaniji i Vijetnamu. Zühlke Srbija je proslavio 8. rodendan,  okuplja 150
-                    pametnih i inspirativnih kolega i nastavlja da se širi! Naše kolege danas se nalaze u različitim delovima 
-                    Srbije - Niš, Novi Sad, Subotica... Naš rad se svodi na kombinovanje različitih disciplina kako bismo rešili
-                    izazovne probleme i iskoristili prilike. To radimo u četiri sfere: strategija i poslovne inovacije, 
-                    Inženjering uređaja i sistema, digitalna rešenja i aplikativni servisi, Data i AI rešenja. Zühlke REady i 
-                    REcharge comp&ben opcije su revolucionarni sistem osmišljen da ponudi fleksibilno radno mesto za naše 
-                    zaposlene. Odabirom jedne od ovih opcija, možete savršeno uskladiti posao i privatni život kako želite! 
-                    Tehnološki skup: JAVA, .NET, C#, JS, NODEJS., ANGULAR, REACT, C, C++, QT, EMBEDDED, ANDROID, IOS, HOLOLENS, 
-                    UNITY, AZURE, AWS, DOCKER, KUBERNETES. Timski rad je duboko integrisan u Zühlke kulturu – otvorenu kulturu 
-                    povratnih informacija gde se svačiji glas čuje. Svake godine ulažemo 10% svojih prihoda u budžete za treninge
-                    i razvoj svojih zaposlenih. Podstičemo lični napredak, jačanje tima i povezivanje. Inspirišite se raznolikim
-                    radnim okruženjem i osetićete benefite naše multikulturalne, globalne i interdisciplinarne kulture!
-                  </p>
-                </div>
-              </div>
-            </div> -->
-          <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/NTP logo.png" width="36%" alt="Naučno-tehnološki park Niš">
-              <div style="text-align: -webkit-center;">
-                <p style="text-align: justify; width: 80%;">
-                  Naucno-tehnološki park Niš (NTP Niš) je neprofitna organizacija koja u bliskoj saradnji sa
-                  Univerzitetom u
-                  Nišu i akademskom zajednicom obezbeđuje potrebnu infrastrukturnu i stručnu podršku inovativnim
-                  preduzećima
-                  u razvoju i ostvarivanju poslovnih uspeha na tržištu, posebno u oblasti visokih tehnologija. Osnovan
-                  je
-                  2020. godine u partnerstvu Vlade Republike Srbije, Univerziteta u Nišu i Grada Niša. Dinamična
-                  zajednica
-                  akademskih institucija, visokotehnoloških kompanija i startap kompanija okupljena na jednom ovakvom
-                  prostoru
-                  od 14000m2 predstavlja jedinstveno okruženje idealno za rad, razmenu znanja i iskustava, kao i za
-                  poslovnu
-                  saradnju i komercijalizaciju naučnih istraživanja. NTP Niš je od oktobra postao dom 18 startap i 13
-                  tehnološko-razvojnih kompanija clanova, pa se sada ponosimo cinjenicom da se uz našu podršku
-                  intenzivno
-                  radi na više od 30 inovativnih projekata. Blizu 500 ljudi iz ovog regionalnog centra razvija
-                  jedinstvene
-                  proizvode i usluge iz oblasti naprednih tehnologija, ukljucujuci gejming, blokčejn, veštacku
-                  inteligenciju,
-                  mašinsko ucenje, Internet of Things, cloud tehnologiju, itd.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="item">
-                  <div>
-                    <img src="assets/img/sponsors/sicef/socgen.svg" width="80%" alt="Societe Generale">
-                    <div style="text-align: -webkit-center;">
-                        <br>
-                      <p style="text-align: justify; width: 80%;">
-                          Societe Generale je banka koja shvata da je potrebno ne samo da odgovori na nove zahteve klijenata, nego i da predvidi buduća kretanja i bude što inovativnija. Njihov cilj je da korisnicima izadju u susret tamo gde njima odgovara – u jednoj od 94 ekspoziture širom Srbije, na njihovoj savremenoj e-banking platformi, ili putem mobilne aplikacije.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="item">
-                    <div>
-                      <img src="assets/img/sponsors/sicef/ibm.svg" width="70%" alt="IBM">
-                      <div style="text-align: -webkit-center;">
-                        <br>
-                        <p style="text-align: justify; width: 80%;">
-                            International Business Machines Corporation (IBM) je kompanija koja se bavi računarskim tehnologijama sa sedištem u Armonku u SAD. Osnovana je 1888. godine a postala je korporacija 1911. godine. Bavi se proizvodnjom računarskog hardvera i softvera, uslugama, hostingom i savetovanjem. IBM je najveća kompanija na svetu koja se bavi informacionim tehnologijama i drži najveći broj patenata u toj oblasti. IBM ima danas oko 332 000 zaposlenih (od toga 195 000 tehničara i inženjera).
-                          </p>
-                      </div>
-                    </div>
-                  </div>
-
-          <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/horisen.svg" width="80%" alt="Horisen">
-              <div style="text-align: -webkit-center;">
-                <p style="text-align: justify; width: 80%;">
-                  Horisen – Marketing Technology & Software Technology for Bulk SMS, Marketing & Communication HORISEN je product-oriented softverska
-                  kompanija specijalizovana za osmišljavanje i inženjering najsavremenijih softverskih rešenja i proizvoda
-                  za telekomunikacionu industriju, marketing i komunikacije. Već više od 15 godina izuzetno uspešno razvijamo
-                  najnaprednija softverska rešenja za provajdere u oblasti telekomunikacija, SMS karijere, SMS agregatore,
-                  mobilne operatere, OTTs kao i za kompanije svih veličina.
-                </p>
-                <p style="text-align: justify; width: 80%;">
-                  Naša 2 najznačajnija proizvoda, oba potpuno osmišljenja i razvijena in-house su: HORISEN SMS Platforma i HORISEN “nGage”.
-                </p>
-                <p style="text-align: justify; width: 80%;">
-                  Osim ova dva naša glavna proizvoda, HORISEN takođe nudi i uslugu Bulk SMS koja se realizuje kroz našu SMS plartformu.
-                </p>
-                <p style="text-align: justify; width: 80%;">
-                  Svi naši proizvodi i usluge koje nudimo su naših ruku delo. Svi su 100% osmišljeni i realizovani in-house. Istovremeno svi
-                  naši proizvodi imaju najviši nivo sigurnosti jer se nalaze u okviru naše cloud-based platforme “horisen.pro”,
-                  takođe potpuno osmišljenje i realizovane 100% in house.
-                </p>
-                <p style="text-align: justify; width: 80%;">
-                  Kao dokaz o kvalitetu i načinu na koji smo potpuno posvećeni radu na našim proizvodima, govori i prestižna GCCM nagrada koju
-                  smo ove godine dobili u Berlinu u kategoriji “Best SMS Platform Provider”.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div>
-              <img src="assets/img/sponsors/sicef/unlimited.svg" width="80%" alt="Unlimited">
-              <div style="text-align: -webkit-center;">
-                <p style="text-align: justify; width: 80%;">
-                  <a href="http://www.Unlimited.rs">Unlimited.rs</a>, kao primarni web hosting brend kompanije United Internet iz Beograda, predstavlja grupu
-                  prijatelja i ICT profesionalaca s bogatim iskustvom u lokalnom i globalnom online poslovanju. Veruju da
-                  je kvalitetan i stabilan hosting osnova svakog ambicioznog i zdravog digitalnog biznisa i upravo iz želje
-                  da se pokrene domaći hosting po svetskim standardima stabilnosti, pouzdanosti, brzine i sopstvenom instrukturom,
-                  nastao je unlimited.rs web hosting.
-                </p>
-              </div>
-            </div>
-          </div>-->
-        </div>
-
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="width: 50px">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next" style="width: 50px">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-  </section>
   <!-- Sponzori o nama -->
   <section id="aboutSponsors" class="section">
     <div class="row">
@@ -2313,146 +2033,84 @@
                 <i class="fa fa-envelope"></i>
               </div>
               <div class="featured-content">
-                <h4>E-mail</h4>
-                <p>office@sicef.info
-                <p>
+                <h4>Mejl</h4>
+                <a href="mailto:office@sicef.info">office@sicef.info</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="row">
-
-          <div class="col-md-6 col-sm-12" style="margin-left: -30px">
-            <div class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
-              <div class="icon col-md-4">
-                <img src="assets/img/contact/project-coordinator.png" style="width: 80%; margin-top: 0px;" />
-              </div>
-              <div class="featured-content col-md-8">
-                <h4>Koordinator projekta</h4>
-                <p style="margin-bottom: -5px">Ime i prezime:
-                  <b>Katarina Dinić</b>
-                </p>
-                <p style="margin-bottom: -5px">Telefon:
-                  <b>+381 66 927 92 99</b>
-                </p>
-                <p>E-mail:
-                  <b>katarina.dinic@sicef.info</b>
-                </p>
-              </div>
+        <div class="kontakt-grid row">
+          <div id="koordinator-1" class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
+            <img src="assets/img/contact/project-coordinator.png" />
+            <div class="featured-content">
+              <h4>Koordinator projekta</h4>
+              <p>Ime i prezime:
+                <b>Katarina Dinić</b>
+              </p>
+              <p>Telefon:
+                <a href="tel:+381669279299"><b>+381 66 927 92 99</b></a>
+              </p>
+              <p>Mejl:
+                <a href="mailto:katarina.dinic@sicef.info"><b>katarina.dinic@sicef.info</b></a>
+              </p>
             </div>
           </div>
-
-          <div class="col-md-6 col-sm-12" style="margin-left: -50px">
-            <div class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
-              <div class="icon col-md-4">
-                <img src="assets/img/contact/male.png" style="width: 70%; margin-top: 0px;" />
-              </div>
-              <div class="featured-content col-md-8">
-                <h4>Predsednik SICEF-a</h4>
-                <p style="margin-bottom: -5px">Ime i prezime:
-                  <b>Kristina Vučković</b>
-                </p>
-                <p style="margin-bottom: -5px">Telefon:
-                  <b>+381 60 058 85 35</b>
-                </p>
-                <p>E-mail:
-                  <b>kristina.vuckovic@sicef.info</b>
-                </p>
-              </div>
+          <div id="koordinator-2" class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
+            <img src="assets/img/contact/project-coordinator.png" />
+            <div class="featured-content">
+              <h4>Koordinator projekta</h4>
+              <p>
+                <span>Ime i prezime:</span>
+                <b>Andrej Madanović</b>
+              </p>
+              <p>
+                <span>Telefon:</span>
+                <a href="tel:+381611421283"><b>+381 61 142 12 83</b></a>
+              </p>
+              <p>
+                <span>Mejl:</span>
+                <a href="mailto:andrej.madanovic@sicef.info"><b>andrej.madanovic@sicef.info</b></a>
+              </p>
             </div>
           </div>
-
+          <div id="predsednik" class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
+            <img src="assets/img/contact/male.png" />
+            <div class="featured-content">
+              <h4>Predsednik SICEF-a</h4>
+              <p>
+                <span>Ime i prezime:</span>
+                <b>Kristina Vučković</b>
+              </p>
+              <p>
+                <span>Telefon:</span>
+                <a href="tel:+381600588535"><b>+381 60 058 85 35</b></a>
+              </p>
+              <p>
+                <span>Mejl:</span>
+                <a href="mailto:kristina.vuckovic@sicef.info"><b>kristina.vuckovic@sicef.info</b></a>
+              </p>
+            </div>
+          </div>
+          <div id="podpredsednik" class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
+            <img src="assets/img/contact/male.png" />
+            <div class="featured-content">
+              <h4>Potpredsednik za eksterne odnose</h4>
+              <p>
+                <span>Ime i prezime:</span>
+                <b>Marko Stojadinović</b>
+              </p>
+              <p>
+                <span>Telefon:</span>
+                <a href="tel:+381616671633"><b>+381 61 667 16 33</b></a>
+              </p>
+              <p>
+                <span>Mejl:</span>
+                <a href="mailto:stojadinovic.marko@sicef.info"><b>stojadinovic.marko@sicef.info</b></a>
+              </p>
+            </div>
+          </div>
         </div>
-        <!-- Row End -->
-        <div class="row">
-
-          <div class="col-md-6 col-sm-12" style="margin-left: -30px">
-            <div class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
-              <div class="icon col-md-4">
-                <img src="assets/img/contact/project-coordinator.png" style="width: 80%; margin-top: 0px;" />
-              </div>
-              <div class="featured-content col-md-8">
-                <h4 style="margin-left: -16px">Koordinator projekta</h4>
-                <p style="margin-bottom: -5px">Ime i prezime:
-                  <b>Andrej Madanović</b>
-                </p>
-                <p style="margin-bottom: -5px">Telefon:
-                  <b>+381 61 142 12 83</b>
-                </p>
-                <p>E-mail:
-                  <b>andrej.madanovic@sicef.info</b>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-12" style="margin-left: -50px">
-            <div class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
-              <div class="icon col-md-4">
-                <img src="assets/img/contact/male.png" style="width: 70%; margin-top: -7px;" />
-              </div>
-              <div class="featured-content col-md-8">
-                <h4 style="margin-left: -16px">Potpredsednik za eksterne odnose</h4>
-                <p style="margin-bottom: -5px">Ime i prezime:
-                  <b>Marko Stojadinović</b>
-                </p>
-                <p style="margin-bottom: -5px">Telefon:
-                  <b>+381 61 667 16 33</b>
-                </p>
-                <p>E-mail:
-                  <b>marko.stojadinovic@sicef.info</b>
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!-- Row End -->
-
-        <!-- <div class="row">
-
-          <div class="col-md-6 col-sm-12" style="margin-left: 50px">
-            <div class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
-              <div class="icon col-md-4">
-                <img src="assets/img/contact/hr.jpg" style="width: 100%; margin-top: -30px;" />
-              </div>
-              <div class="featured-content col-md-8">
-                <h4 style="margin-left: -16px">Potpredsednik za eksterne odnose</h4>
-                <p style="margin-bottom: -5px">Ime i prezime:
-                  <b>Marija Stanković</b>
-                </p>
-                <p style="margin-bottom: -5px">Telefon:
-                  <b>+381 64 44 94 625</b>
-                </p>
-                <p>E-mail:
-                  <b>marija.stankovic@sicef.info</b>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-12" style="margin-left: 50px">
-            <div class="featured-box wow fadeInLeft" data-wow-delay="0.3s">
-              <div class="icon col-md-4">
-                <img src="assets/img/contact/hr.jpg" style="width: 100%; margin-top: -30px;" />
-              </div>
-              <div class="featured-content col-md-8">
-                <h4 style="margin-left: -16px">Potpredsednik za eksterne odnose</h4>
-                <p style="margin-bottom: -5px">Ime i prezime:
-                  <b>Marija Stanković</b>
-                </p>
-                <p style="margin-bottom: -5px">Telefon:
-                  <b>+381 64 44 94 625</b>
-                </p>
-                <p>E-mail:
-                  <b>marija.stankovic@sicef.info</b>
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div> -->
         <!-- Row End -->
       </div>
       <!-- Row End -->

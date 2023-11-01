@@ -140,6 +140,11 @@ ul.li-blocks ul.li-row li strong {
 .speaker i {display:none;}
 .speaker .col-md-10 {border:none; }
 }
+ @media screen and (max-width : 767px) {
+.timeline__content {
+	margin-inline: 50px !important;
+}
+}
  @media screen and (min-width : 600px) and (max-width : 767px) {
 #partners a img {
 	width: 50%;
@@ -241,6 +246,9 @@ a.register-trigger {
 #register {
 	text-align: left;
 }
+.nav-tabs.day {
+	display: none;
+}
 .tab-pane {
 	display: block!important;
 	margin-bottom: 2em;
@@ -249,6 +257,22 @@ a.register-trigger {
 .tab-pane h3 i {
 	display: inline-block;
 	color: #b2b2b2;
+}
+.day-title {
+	display: block;
+}
+.timeline::before {
+	height: calc(100% - 210px);
+}
+#day2 .timeline::before, #day3 .timeline::before {
+	content: none;
+}
+.timeline__item {
+	flex-wrap: wrap;
+}
+.timeline__content {
+	width: 100%;
+	margin-inline: 39px;
 }
 #schedule .nav-tabs {
 	display: none;
@@ -338,9 +362,21 @@ html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fie
 #schedule .nav-tabs li a {
 	padding: 1.5em 2em !important;
 }
+.timeline__item {
+	flex-wrap: wrap;
+}
+.timeline__content {
+	width: 100%;
+	margin-inline: 39px;
+}
 }
  @media only screen and (min-width : 1201px) {
 .navbar-collapse {
 	padding-right: 0;
 }
 }
+ @media (max-width : 480px) {
+	.day-title {
+		margin-bottom: -3rem;
+	}
+ }
