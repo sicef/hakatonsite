@@ -375,3 +375,8 @@ html, body, div, p, table, tr, td, th, tbody, tfoot, ul, li, ol, dl, dd, dt, fie
 	padding-right: 0;
 }
 }
+ @media (max-width : 480px) {
+	.day-title {
+		margin-bottom: -3rem;
+	}
+ }
