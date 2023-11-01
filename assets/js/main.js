@@ -80,3 +80,20 @@
       closedSymbol: '<i class="fa fa-angle-right"></i>',
       openedSymbol: '<i class="fa fa-angle-down"></i>',
     });
+
+document.querySelectorAll(".spnsors-logo").forEach((logo) => {
+  const sponsor = logo.parentNode
+  const dialog = sponsor.querySelector("dialog")
+  sponsor.addEventListener("click", (event) => {
+    if (dialog.open && event.target === dialog) {
+      dialog.close()
+    } else {
+      dialog.showModal()
+      // dialog.addEventListener("click", (event) => {
+      //   if (event.target === dialog) {
+      //     dialog.close()
+      //   }
+      // })
+    }
+  })
+})
