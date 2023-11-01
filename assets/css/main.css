@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500,700');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,500,700");
 /* ==========================================================================
    All Import File List
    ========================================================================== */
@@ -7,7 +7,7 @@
    ========================================================================== */
 body {
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #777777;
   margin: 0;
@@ -23,14 +23,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #2d2d2d;
   font-weight: 700;
 }
 p {
   color: #777777;
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 a {
@@ -65,7 +65,7 @@ ol {
 }
 .section-title {
   color: #2d2d2d;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   font-weight: 700;
   font-size: 50px;
@@ -89,7 +89,7 @@ ol {
   border-radius: 50px;
   color: #fff;
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   -webkit-transition: all 0.3s linear;
@@ -103,12 +103,14 @@ ol {
   outline: none;
 }
 .btn-common {
-  color: #FFF;
+  color: #fff;
   background: #e91e63;
 }
 .btn-common:hover {
   color: #fff;
-  box-shadow: 0 14px 26px -12px rgba(233, 30, 99, 0.42), 0 4px 23px 0px rgba(233, 30, 99, 0.12), 0 8px 10px -5px rgba(233, 30, 99, 0.02);
+  box-shadow: 0 14px 26px -12px rgba(233, 30, 99, 0.42),
+    0 4px 23px 0px rgba(233, 30, 99, 0.12),
+    0 8px 10px -5px rgba(233, 30, 99, 0.02);
 }
 .btn-border {
   color: #777777;
@@ -283,10 +285,10 @@ fieldset[disabled] .btn {
 }
 
 .navbar-nav a {
-  -moz-transition: color .3s linear,background .3s linear;
-  -webkit-transition: color .3s linear,background .3s linear;
-  -o-transition: color .3s linear,background .3s linear;
-  transition: color .3s linear,background .3s linear;
+  -moz-transition: color 0.3s linear, background 0.3s linear;
+  -webkit-transition: color 0.3s linear, background 0.3s linear;
+  -o-transition: color 0.3s linear, background 0.3s linear;
+  transition: color 0.3s linear, background 0.3s linear;
 }
 .navbar-default .navbar-nav {
   position: relative;
@@ -300,7 +302,7 @@ fieldset[disabled] .btn {
 }
 .navbar-default .navbar-nav li a {
   color: rgba(255, 255, 255, 0.75);
-  font-size: 12px;                  /* NAVBAR font size !! */
+  font-size: 12px; /* NAVBAR font size !! */
   display: block;
   padding: 30px 0px;
   text-decoration: none;
@@ -442,7 +444,7 @@ fieldset[disabled] .btn {
 }
 .caret:before {
   content: "\e604";
-  font-family: 'Simple-Line-Icons';
+  font-family: "Simple-Line-Icons";
   left: -2px;
   top: -20px;
   font-size: 11px;
@@ -482,7 +484,7 @@ fieldset[disabled] .btn {
    Carousel Area Style
    ========================================================================== */
 #carousel-area {
-  background-color: #E9E9E9;
+  background-color: #e9e9e9;
   overflow: hidden;
 }
 #carousel-area .carousel-inner:before {
@@ -731,8 +733,8 @@ fieldset[disabled] .btn {
 .featured-box {
   padding: 20px;
   text-align: center;
-    /* extra */
-    display: flex;
+  /* extra */
+  display: flex;
 }
 .featured-box .icon {
   padding: 15px;
@@ -747,12 +749,12 @@ fieldset[disabled] .btn {
   font-weight: 500;
   color: #2d2d2d;
   /* extra */
-    text-align: left;
+  text-align: left;
 }
 /* extra */
-.featured-content{
+.featured-content {
   display: block;
-  text-align:justify;
+  text-align: justify;
 }
 /* ==========================================================================
    About 
@@ -998,11 +1000,12 @@ fieldset[disabled] .btn {
   padding: 15px;
   display: inline-block;
   vertical-align: middle;
-  
 }
 
-#sponsors .spnsors-logo svg, #sponsors .spnsors-logo img,
-#sponsors .spnsors-logo-small svg, #sponsors .spnsors-logo-small img {
+#sponsors .spnsors-logo svg,
+#sponsors .spnsors-logo img,
+#sponsors .spnsors-logo-small svg,
+#sponsors .spnsors-logo-small img {
   max-width: 100%;
   max-height: 152px;
   object-fit: contain;
@@ -1024,9 +1027,7 @@ fieldset[disabled] .btn {
   text-align: center;
   font-size: 24px;
 }
-#sponsors 
-.small-title-margin 
-{
+#sponsors .small-title-margin {
   margin-top: 50px;
 }
 /* ==========================================================================
@@ -1116,8 +1117,8 @@ fieldset[disabled] .btn {
 }
 
 .ova-zeza {
-    height: 100%;
-    object-fit: cover;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ==========================================================================
@@ -1131,7 +1132,7 @@ fieldset[disabled] .btn {
   z-index: 2;
 }
 .ready-to-play:before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   left: 0px;
@@ -1139,7 +1140,7 @@ fieldset[disabled] .btn {
   width: 100%;
   height: 100%;
   z-index: 0;
-  opacity: 0.70;
+  opacity: 0.7;
 }
 video {
   position: absolute;
@@ -1166,7 +1167,7 @@ h1 {
   font-size: 3rem;
   text-transform: uppercase;
   margin-top: 0;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
 }
 .video-text {
   background-size: cover;
@@ -1294,7 +1295,7 @@ h1 {
   color: #ea4c89;
 }
 .social-icon a .fa-behance:hover {
-  color: #42C0FB;
+  color: #42c0fb;
 }
 #team .single-member {
   background: #fff;
@@ -1319,7 +1320,7 @@ h1 {
   width: 100%;
 }
 #team .team-img:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   width: 100%;
@@ -1593,7 +1594,7 @@ h1 {
   transition: all 0.2s linear;
 }
 #contact .social a .fa-google-plus:hover {
-  color: #E91E63;
+  color: #e91e63;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -1679,9 +1680,9 @@ h1 {
   height: 2px;
   background: #e4e4e4;
   bottom: 0px;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 #contact .span.active {
   top: auto;
@@ -1693,9 +1694,9 @@ h1 {
   margin: 0px 0 30px;
 }
 #contact .transition {
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.5, 1);
   -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.5, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.5, 1);
@@ -1710,9 +1711,9 @@ h1 {
   height: 2px;
   background: #e91e63;
   position: absolute;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 #contact .label-line.active .span:before {
   width: 100%;
@@ -1767,7 +1768,7 @@ footer ul li a {
   position: relative;
 }
 #subscribe-section:before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   left: 0px;
@@ -1776,7 +1777,7 @@ footer ul li a {
   height: 100%;
   z-index: 0;
   background: #e91e63;
-  opacity: 0.90;
+  opacity: 0.9;
 }
 #subscribe-section .content {
   position: relative;
@@ -1853,7 +1854,7 @@ footer ul li a {
   position: relative;
 }
 #intro:before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   left: 0px;
@@ -1862,7 +1863,7 @@ footer ul li a {
   height: 100%;
   z-index: 0;
   background: #e91e63;
-  opacity: 0.90;
+  opacity: 0.9;
 }
 #intro .content-text h2 {
   color: #fff;
@@ -1906,19 +1907,19 @@ footer ul li a {
   -o-transition: all 0.4s ease-in-out;
 }
 .social-link .twitter:hover i {
-  color: #00BAFF;
+  color: #00baff;
 }
 .social-link .facebook:hover i {
-  color: #5192CC;
+  color: #5192cc;
 }
 .social-link .google:hover i {
-  color: #ED523D;
+  color: #ed523d;
 }
 .social-link .linkedin:hover i {
-  color: #1985BC;
+  color: #1985bc;
 }
 .social-link .youtube:hover i {
-  color: #D42424;
+  color: #d42424;
 }
 .post-title {
   font-size: 22px;
@@ -2053,7 +2054,7 @@ footer ul li a {
   font-size: 18px;
   font-weight: 700;
   padding: 12px 15px;
-  background: #F9F9F9;
+  background: #f9f9f9;
   border-bottom: 1px solid #e91e63;
   margin-bottom: 20px;
 }
@@ -2164,7 +2165,7 @@ footer ul li a {
 }
 #sidebar .posts-list .widget-content a {
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: #2d2d2d;
 }
@@ -2409,4 +2410,12 @@ blockquote .quote-text {
 
 .main-board .timeline {
   margin-top: 3rem;
+}
+
+.day-title {
+  display: none;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: -6rem;
 }
