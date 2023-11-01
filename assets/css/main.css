@@ -294,6 +294,9 @@ fieldset[disabled] .btn {
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .navbar-default .navbar-nav li a {
   color: rgba(255, 255, 255, 0.75);
