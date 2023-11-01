@@ -2419,3 +2419,64 @@ blockquote .quote-text {
   margin-top: 3rem;
   margin-bottom: -6rem;
 }
+
+.kontakt-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.kontakt-grid::before,
+.kontakt-grid::after {
+  content: none !important;
+}
+
+.kontakt-grid > div {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 3rem;
+}
+
+.kontakt-grid > div > img {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.kontakt-grid p {
+  margin: 0;
+}
+
+#koordinator-1 {
+  grid-area: koordinator-1;
+}
+
+#koordinator-2 {
+  grid-area: koordinator-2;
+}
+
+#predsednik {
+  grid-area: predsednik;
+}
+
+#potpredsednik {
+  grid-area: potpredsednik;
+}
+
+@media (min-width: 990px) {
+  .kontakt-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      "koordinator-1 predsednik"
+      "koordinator-2 potpredsednik";
+  }
+
+  .kontakt-grid > div {
+    grid-template-columns: 1fr 3fr;
+  }
+}
