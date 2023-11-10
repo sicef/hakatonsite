@@ -97,3 +97,5 @@ document.querySelectorAll(".spnsors-logo").forEach((logo) => {
     }
   })
 })
+
+document.getElementById("copyright-year").textContent = new Date().getFullYear();
