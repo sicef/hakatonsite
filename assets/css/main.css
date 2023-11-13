@@ -2535,3 +2535,21 @@ dialog > div h3 {
   font-weight: bold;
   margin: 0;
 }
+
+.nivo-lightbox-prev {
+  top: unset !important;
+  bottom: 2rem;
+  right: unset !important;
+  left: 10% !important;
+  width: 14ch;
+  margin: 0 !important;
+}
+
+.nivo-lightbox-next {
+  top: unset !important;
+  bottom: 2rem;
+  left: unset !important;
+  right: 10% !important;
+  width: 14ch;
+  margin: 0 !important;
+}
