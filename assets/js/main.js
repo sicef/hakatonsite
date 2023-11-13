@@ -89,11 +89,6 @@ document.querySelectorAll(".spnsors-logo").forEach((logo) => {
       dialog.close()
     } else {
       dialog.showModal()
-      // dialog.addEventListener("click", (event) => {
-      //   if (event.target === dialog) {
-      //     dialog.close()
-      //   }
-      // })
     }
   })
 })
