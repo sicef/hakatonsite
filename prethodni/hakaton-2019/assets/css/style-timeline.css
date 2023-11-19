@@ -1,0 +1,160 @@
+@import 'https://fonts.googleapis.com/css?family=Muli:300';
+/* Timeline
+ */
+.timeline {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding: 20px 62px;
+  margin: 0;
+  list-style: none;
+}
+.timeline::before {
+  position: fixed;
+  /* top: 0px; */
+  height: calc(100% - 170px);
+  padding-right: 11px;
+  border-right: 2px solid #F2F2F2;
+  content: "";
+}
+.timeline__item {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  padding: 15px 0;
+}
+.timeline__step {
+  padding-right: 15px;
+}
+.timeline__step__marker {
+  position: relative;
+  display: table-cell;
+  height: 24px;
+  min-height: 24px;
+  width: 24px;
+  min-width: 24px;
+  border: 4px solid #F2F2F2;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 0;
+}
+.timeline__step__marker--red {
+  border-color: #FF3467;
+}
+.timeline__step__marker--blue {
+  border-color: #18D0BF;
+}
+.timeline__step__marker--salmon {
+  border-color: #F48A6D;
+}
+.timeline__step__marker--purple {
+  border-color: #C178FA;
+}
+.timeline__step__marker--yellow { 
+  border-color: #F1C40F; 
+} 
+.timeline__step__marker--gray { 
+  border-color: rgb(105, 105, 105); 
+}
+.timeline__step__marker--orange { 
+  border-color: rgb(255, 135, 36); 
+}
+.timeline__step__marker--green { 
+  border-color: rgb(35, 168, 35); 
+}
+.timeline__time {
+  padding-right: 63px;
+  font-size: 1.5em;
+}
+.timeline__title {
+  padding-bottom: 15px;
+  font-size: 1.7em;
+}
+.timeline__points {
+  padding: 0;
+  list-style: none;
+  font-size: 22px;
+  color: #77777D;
+  margin-top:-8px;
+}
+.timeline__points > * {
+  padding: 0 0 12px 0;
+}
+
+/* For mobile!
+ */
+@media (max-width: 768px) {
+  .card {
+    max-width: 375;
+  }
+
+  .timeline {
+    padding: 0 35.42857px;
+  }
+  .timeline::before {
+    padding-right: 6.28571px;
+  }
+  .timeline__item {
+    padding: 35.42857px 0;
+  }
+  .timeline__step {
+    padding-right: 35.42857px;
+  }
+  .timeline__step__marker {
+    height: 13.71429px;
+    min-hieght: 13.71429px;
+    width: 13.71429px;
+    min-width: 13.71429px;
+    border-width: 2.28571px;
+  }
+  .timeline__time {
+    padding-right: 72px;
+    font-size: 14.85714px;
+  }
+  .timeline__title {
+    padding-bottom: 14.85714px;
+    font-size: 18.28571px;
+  }
+  .timeline__points {
+    font-size: 13.71429px;
+  }
+  .timeline__points > * {
+    padding-bottom: 6.85714px;
+  }
+ }
+/*
+html {
+  background: url(//bilbo.surge.sh/codepen/timeline/bg.jpg) no-repeat center center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+html, body {
+  line-height: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.card {
+  background-color: white;
+  max-width: 750px;
+  margin: 0 auto;
+  height: 100%;
+  -moz-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  display: table;
+} */
